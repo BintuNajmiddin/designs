@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Jost',sans-serif;
+}
+
+:root{
+    font-size: 14px;
+}
+
+/* general styles */
+
+.container{
+    max-width: 1110px; 
+    margin: 0 auto;
+}
+
+.row{
+display: flex;
+flex-wrap: wrap;
+margin: 0 -15px;
+}
+
+
+
+.page-title {
+    background-color: #E7816B;
+    background-image: url(../img/oval.svg);
+    background-repeat: no-repeat;
+    margin-top: 160px;
+    padding: 55px 24px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.page-title__heading {
+font-size: 3.42rem;
+font-weight: 500;
+line-height: 48px;
+text-align: center;
+color: #fff;
+margin-top: 0;
+}
+
+.page-title__text {
+color: #fff;
+font-size: 1.14rem;
+font-weight: 400;
+line-height: 1.85rem;
+width: 400px;
+margin: 0 auto;
+}
+
+.portfolio {
+    margin-top: 160px;
+}
+/* 
+.portfolio::before{
+    content: '';
+background-image: url(../img/Rectangle.svg);
+position: absolute;
+top: 281px;
+} */
+
+.card {
+    background-color: #fdf3f0;
+    margin-bottom: 32px;
+    border-radius: 15px;
+    transition: all 500ms ease-in-out;
+}
+
+.card:hover{
+    background-color: #e7816b;
+}
+
+.col-lg-4{
+    width: 33.3%;
+    padding: 0 15px;
+}
+
+.card__image {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card__content {
+    text-align: center;
+}
+
+.card__title {
+color: #e7816b;
+font-size: 1.42rem;
+font-weight: 500px;
+letter-spacing: 5px;
+}
+
+.card:hover .card__title{
+    color: #fff;
+}
+
+.card__text {
+    font-size: 1.14rem;
+    color: #333136;
+    width: 280px;
+    margin: 0 auto;
+    padding-bottom: 32px;
+}
+.card:hover .card__text{
+    color: #fff;
+}
+
+.services::before{
+content: '';
+background-image: url(../img/Rectangle.svg);
+background-position: left;
+z-index: -1;
+position: absolute;
+width: 1006px;
+height: 594px;
+background-repeat: no-repeat;
+top: 281px;
+left: 0;
+}
+
+.services{
+    margin-top: 160px;
+    margin-bottom: 200px;
+}
+.service {
+    text-decoration: none;
+    position: relative;
+}
+
+.col-lg-6{
+    width: 50%;
+    padding:  0 15px;
+}
+
+.service__image {
+width: 100%;
+}
+
+.service__info {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+    text-align: center;
+    width: 100%;
+}
+
+.service__title {
+    color: #fff;
+    display: block;
+    font-size: 2.85rem;
+    letter-spacing: 2px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.service__text {
+    font-size: 1.14rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 5px;
+}
